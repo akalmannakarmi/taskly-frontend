@@ -1,27 +1,23 @@
 // app/routes/index.tsx
 import Navbar from '~/components/Navbar';
-import Banner from '~/components/Banner';
-import MainContent from '~/components/MainContent';
+import Tasks from '~/components/Tasks';
 import Footer from '~/components/Footer';
 import { MetaFunction } from '@remix-run/react';
 
 export const meta: MetaFunction = () => {
     return [
-      { title: "Taskly" },
-      { name: "description", content: "Welcome to Taskly!" },
+      { title: "Taskly | Today's Tasks" },
     ];
   };
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
+        <Navbar />
 
-      <Banner />
+        <Tasks />
 
-      <MainContent />
-
-      <Footer />
+        <Footer />
     </div>
   );
 }
