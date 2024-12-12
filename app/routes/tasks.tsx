@@ -15,7 +15,7 @@ export default function Home() {
     <div>
         <Navbar />
 
-        <Tasks />
+        <Tasks taskType="Year"/>
 
         <Footer />
     </div>
